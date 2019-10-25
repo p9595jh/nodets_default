@@ -1,0 +1,7 @@
+path: ./bin/www.ts
+line: 3, column: 33
+string: 'nodets' from 'nodets:server'
+
+path: ./package.json
+line: 2, column: 11
+string: 'nodets'
