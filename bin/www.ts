@@ -45,6 +45,10 @@ function onError(error: any) {
 
 function onListening() {
     let addr = server.address();
+    if ( !addr ) {
+        console.log('server address is not defined');
+        return;
+    }
     let bind = typeof addr === 'string'
         ? 'pipe' + addr
         : 'port ' + addr.port;
